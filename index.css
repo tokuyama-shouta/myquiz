@@ -1,7 +1,40 @@
 body{
-  background: #efdec1;
+  background: #f8c0e1;
   font-size: 14px;
 
+}
+h1{
+  text-align: center;
+  margin-top: 50px;
+  
+}
+h2{
+  padding-top: 60px;
+  font-size: 25px;
+}
+#startBtn{
+  background: #3498db;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+  box-shadow: 0 3px 0 #28809b;
+  width: 300px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+#box{
+  width: 500px;
+  height: 300px;
+  background-color: #a2cfec;
+  position: absolute;
+  top: 50;
+  right: 35%;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 66;
 }
 .container{
   width: 400px;
@@ -33,14 +66,14 @@ body{
   background: #f8f8f8;
 }
 #choices > li.wrong{
-  background: #f8d8da;
-  background-color: #f5c6cb;
-  color:#721c24;
+  background: #d4edda;
+  background-color: #c3e6cd;
+  color:#155724;
   font-weight: bold;
 }
 
 #choices > li.wrong::after{
-  content:'...wrong';
+  content:'  ...ok';
 }
 
 #choices > li.correct{
@@ -51,7 +84,7 @@ body{
 }
 
 #choices > li.correct::after{
-  content:'...correct';
+  content:'  ...ok';
 }
 
 #btn,#result > a{
@@ -95,4 +128,18 @@ body{
 #result > a{
   display: block;
   text-decoration: none;
+}
+
+
+.fadeout {
+  animation : fadeOut 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
