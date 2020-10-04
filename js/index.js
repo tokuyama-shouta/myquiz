@@ -14,16 +14,16 @@
   
 
   const quizSet = shuffle([ //問題の配列
-    {q:'休みの日は何してるの？と聞かれた',c:['Yes','No']},
-    {q:'好きな食べ物、苦手な食べ物を聞かれた',c:['Yes','No']},
-    {q:'今度の休みの予定を聞かれた',c:['Yes','No']},
-    {q:'クリスマスの予定を聞かれた?',c:['Yes','No']},
-    {q:'小さい時はどんな子供だったの？と聞かれた?',c:['Yes','No']},
-    {q:'どんなタイプの女性が好きなの？と聞かれた?',c:['Yes','No']},
-    {q:'趣味に関する細かい質問をされた',c:['Yes','No']},
-    {q:'出身地や生い立ちに関する質問をされた?',c:['Yes','No']},
-    {q:'親や兄弟など家族に関する質問をされた?',c:['Yes','No']},
-    {q:'血液型は何？と聞かれた',c:['Yes','No']},
+    {q:'異性から遊びに誘われた',c:['Yes','No']},
+    {q:'異性からよく質問される',c:['Yes','No']},
+    {q:'LINEの返事が凄く早く帰ってくる',c:['Yes','No']},
+    {q:'デート中に次のデートの予定を決めてくる',c:['Yes','No']},
+    {q:'ボディタッチを頻繁にしてくる',c:['Yes','No']},
+    {q:'どんなタイプの女性が好きなの？と聞かれた',c:['Yes','No']},
+    {q:'用事もないのに連絡がくる',c:['Yes','No']},
+    {q:'SNSに頻繁にコメントをしてくる',c:['Yes','No']},
+    {q:'親や兄弟など家族に関する質問をされた',c:['Yes','No']},
+    {q:'異性からの視線を感じる気がする',c:['Yes','No']},
     
   ]);
   let currentNum = 0; //今何問目のクイズを説いているか
@@ -103,11 +103,11 @@
     if(currentNum === quizSet.length -1){
       // console.log(`Score:${score} / ${quizSet.length}`);
       if(score >= 7){
-        scoreLabel.textContent = `脈ありです！告白しよう！Score:${score} / ${quizSet.length}`
+        scoreLabel.textContent = `脈ありです！告白しよう！\n Score:${score} / ${quizSet.length}`
       }else if(score >= 4 && score < 7){
-        scoreLabel.textContent = `後少し頑張ってみて！Score:${score} / ${quizSet.length}`
+        scoreLabel.textContent = `後少し頑張ってみて！\n Score:${score} / ${quizSet.length}`
       }else{
-        scoreLabel.textContent = `脈なしです！次の恋へ！Score:${score} / ${quizSet.length}`
+        scoreLabel.textContent = `脈なしです！次の恋へ！\n Score:${score} / ${quizSet.length}`
       }
       result.classList.remove('hidden');
     }else{

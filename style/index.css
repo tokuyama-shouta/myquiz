@@ -1,7 +1,8 @@
+
 body{
   background: #f8c0e1;
   font-size: 14px;
-
+  height: 500px;
 }
 h1{
   text-align: center;
@@ -31,9 +32,9 @@ h2{
   background-color: #a2cfec;
   position: absolute;
   top: 50px;
+
   /* right: 600px; */
   text-align: center;
-  border-radius: 15px;
   z-index: 66;
 }
 .container{
@@ -144,3 +145,50 @@ h2{
   }
 }
 
+
+@media screen and (max-width: 959px) {
+  /* 959px以下に適用されるCSS（タブレット用） */
+  .container{
+    width: 300px;
+
+  }
+  
+  h2{
+    font-size: 25px;
+  }
+  #startBtn{
+    width: 250px;
+    margin-top: 30px;
+  }
+  #box{
+    width: 100%;
+  }
+  #result{
+    width: 250px;
+  }
+  #result > p{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  .container{
+    width: 300px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  #startBtn{
+    width: 250px;
+    margin-top: 30px;
+  }
+  #box{
+    width: 100%;
+  }
+  #result{
+    width: 250px;
+  }
+  #result > p{
+    font-size: 18px;
+  }
+}
